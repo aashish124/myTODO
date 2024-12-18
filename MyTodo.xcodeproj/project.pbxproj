@@ -14,6 +14,12 @@
 		E546FAB72D134E4F006BA8B3 /* MyTodoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546FAB62D134E4F006BA8B3 /* MyTodoTests.swift */; };
 		E546FAC12D134E4F006BA8B3 /* MyTodoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546FAC02D134E4F006BA8B3 /* MyTodoUITests.swift */; };
 		E546FAC32D134E4F006BA8B3 /* MyTodoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546FAC22D134E4F006BA8B3 /* MyTodoUITestsLaunchTests.swift */; };
+		E546FAD02D13529C006BA8B3 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546FACF2D13529C006BA8B3 /* TextView.swift */; };
+		E546FAD32D135395006BA8B3 /* TextModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546FAD22D135395006BA8B3 /* TextModel.swift */; };
+		E546FAD52D135F35006BA8B3 /* MyFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546FAD42D135F35006BA8B3 /* MyFont.swift */; };
+		E546FAD82D135F7F006BA8B3 /* DefaultCaseEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546FAD72D135F7F006BA8B3 /* DefaultCaseEnum.swift */; };
+		E546FADA2D13645D006BA8B3 /* MyAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546FAD92D13645D006BA8B3 /* MyAlignment.swift */; };
+		E546FADD2D1364C8006BA8B3 /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546FADC2D1364C8006BA8B3 /* MyColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		E546FABC2D134E4F006BA8B3 /* MyTodoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyTodoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E546FAC02D134E4F006BA8B3 /* MyTodoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTodoUITests.swift; sourceTree = "<group>"; };
 		E546FAC22D134E4F006BA8B3 /* MyTodoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTodoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E546FACF2D13529C006BA8B3 /* TextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		E546FAD22D135395006BA8B3 /* TextModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModel.swift; sourceTree = "<group>"; };
+		E546FAD42D135F35006BA8B3 /* MyFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFont.swift; sourceTree = "<group>"; };
+		E546FAD72D135F7F006BA8B3 /* DefaultCaseEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCaseEnum.swift; sourceTree = "<group>"; };
+		E546FAD92D13645D006BA8B3 /* MyAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAlignment.swift; sourceTree = "<group>"; };
+		E546FADC2D1364C8006BA8B3 /* MyColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,9 @@
 		E546FAA42D134E4E006BA8B3 /* MyTodo */ = {
 			isa = PBXGroup;
 			children = (
+				E546FADB2D136470006BA8B3 /* Appearance */,
+				E546FAD62D135F70006BA8B3 /* Commons */,
+				E546FAD12D135379006BA8B3 /* TextView */,
 				E546FAA52D134E4E006BA8B3 /* MyTodoApp.swift */,
 				E546FAA72D134E4E006BA8B3 /* ContentView.swift */,
 				E546FAA92D134E4F006BA8B3 /* Assets.xcassets */,
@@ -125,6 +140,33 @@
 				E546FAC22D134E4F006BA8B3 /* MyTodoUITestsLaunchTests.swift */,
 			);
 			path = MyTodoUITests;
+			sourceTree = "<group>";
+		};
+		E546FAD12D135379006BA8B3 /* TextView */ = {
+			isa = PBXGroup;
+			children = (
+				E546FACF2D13529C006BA8B3 /* TextView.swift */,
+				E546FAD22D135395006BA8B3 /* TextModel.swift */,
+			);
+			path = TextView;
+			sourceTree = "<group>";
+		};
+		E546FAD62D135F70006BA8B3 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				E546FAD72D135F7F006BA8B3 /* DefaultCaseEnum.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		E546FADB2D136470006BA8B3 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				E546FAD42D135F35006BA8B3 /* MyFont.swift */,
+				E546FAD92D13645D006BA8B3 /* MyAlignment.swift */,
+				E546FADC2D1364C8006BA8B3 /* MyColor.swift */,
+			);
+			path = Appearance;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E546FAD52D135F35006BA8B3 /* MyFont.swift in Sources */,
+				E546FAD32D135395006BA8B3 /* TextModel.swift in Sources */,
+				E546FAD02D13529C006BA8B3 /* TextView.swift in Sources */,
 				E546FAA82D134E4E006BA8B3 /* ContentView.swift in Sources */,
+				E546FAD82D135F7F006BA8B3 /* DefaultCaseEnum.swift in Sources */,
+				E546FADD2D1364C8006BA8B3 /* MyColor.swift in Sources */,
 				E546FAA62D134E4E006BA8B3 /* MyTodoApp.swift in Sources */,
+				E546FADA2D13645D006BA8B3 /* MyAlignment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
