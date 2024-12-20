@@ -15,18 +15,24 @@ struct TextModel: Codable {
     let textAlignment: MyAlignment
     let textColor: MyColor
     let lineHeight: CGFloat
+    let backgroundColor: MyColor
+    let kerning: CGFloat
     
     init(text: String,
          font: MyFont,
          lineLimit: Int? = nil,
          textAlignment: MyAlignment,
          textColor: MyColor,
-         lineHeight: CGFloat = 16.0) {
+         lineHeight: CGFloat = 16.0,
+         backgroundColor: MyColor = .init(color: .white),
+         kerning: CGFloat = 0.0) {
         self.text = text
         self.font = font
         self.lineLimit = lineLimit
         self.textAlignment = textAlignment
         self.textColor = textColor
         self.lineHeight = lineHeight
+        self.backgroundColor = backgroundColor
+        self.kerning = kerning
     }
 }

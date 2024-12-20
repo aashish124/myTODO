@@ -16,13 +16,16 @@ struct TextView: View {
     
     var body: some View {
         Text(textModel.text)
+            .kerning(textModel.kerning)
             .font(.custom(textModel.font.name,
                           size: textModel.font.size))
             .fontWeight(textModel.font.weight.swiftUIFontWeight)
-            .foregroundStyle(textModel.textColor.color.swiftUIColor)
             .lineLimit(textModel.lineLimit)
             .multilineTextAlignment(textModel.textAlignment.swiftUITextAlignment)
             .lineSpacing(textModel.lineHeight - textModel.font.size)
+            .foregroundStyle(textModel.textColor.color.swiftUIColor)
+            .background(textModel.backgroundColor.color.swiftUIColor)
+            
     }
 }
 
@@ -31,4 +34,3 @@ struct TextView: View {
     
     return TextView(textModel: textModel)
 }
-
