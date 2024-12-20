@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E5218E0A2D161A6E00303A73 /* Lato-black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5218DFE2D161A6E00303A73 /* Lato-black.ttf */; };
+		E5218E0C2D161A6E00303A73 /* Lato-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5218E002D161A6E00303A73 /* Lato-bold.ttf */; };
+		E5218E0F2D161A6E00303A73 /* Lato-light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5218E032D161A6E00303A73 /* Lato-light.ttf */; };
+		E5218E112D161A6E00303A73 /* Lato-regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5218E052D161A6E00303A73 /* Lato-regular.ttf */; };
+		E5218E122D161A6E00303A73 /* Lato-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5218E062D161A6E00303A73 /* Lato-thin.ttf */; };
+		E5218E142D161A6E00303A73 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = E5218E082D161A6E00303A73 /* OFL.txt */; };
 		E546FAA62D134E4E006BA8B3 /* MyTodoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546FAA52D134E4E006BA8B3 /* MyTodoApp.swift */; };
 		E546FAA82D134E4E006BA8B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E546FAA72D134E4E006BA8B3 /* ContentView.swift */; };
 		E546FAAA2D134E4F006BA8B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E546FAA92D134E4F006BA8B3 /* Assets.xcassets */; };
@@ -40,6 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E5218DFE2D161A6E00303A73 /* Lato-black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-black.ttf"; sourceTree = "<group>"; };
+		E5218E002D161A6E00303A73 /* Lato-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-bold.ttf"; sourceTree = "<group>"; };
+		E5218E032D161A6E00303A73 /* Lato-light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-light.ttf"; sourceTree = "<group>"; };
+		E5218E052D161A6E00303A73 /* Lato-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-regular.ttf"; sourceTree = "<group>"; };
+		E5218E062D161A6E00303A73 /* Lato-thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-thin.ttf"; sourceTree = "<group>"; };
+		E5218E082D161A6E00303A73 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		E5218E152D161D4900303A73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E546FAA22D134E4E006BA8B3 /* MyTodo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyTodo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E546FAA52D134E4E006BA8B3 /* MyTodoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTodoApp.swift; sourceTree = "<group>"; };
 		E546FAA72D134E4E006BA8B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +96,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E5218DFC2D161A2400303A73 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				E5218DFD2D161A2F00303A73 /* Fonts */,
+				E546FAA92D134E4F006BA8B3 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		E5218DFD2D161A2F00303A73 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E5218E092D161A6E00303A73 /* Lato */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E5218E092D161A6E00303A73 /* Lato */ = {
+			isa = PBXGroup;
+			children = (
+				E5218DFE2D161A6E00303A73 /* Lato-black.ttf */,
+				E5218E002D161A6E00303A73 /* Lato-bold.ttf */,
+				E5218E032D161A6E00303A73 /* Lato-light.ttf */,
+				E5218E052D161A6E00303A73 /* Lato-regular.ttf */,
+				E5218E062D161A6E00303A73 /* Lato-thin.ttf */,
+				E5218E082D161A6E00303A73 /* OFL.txt */,
+			);
+			path = Lato;
+			sourceTree = "<group>";
+		};
 		E546FA992D134E4E006BA8B3 = {
 			isa = PBXGroup;
 			children = (
@@ -106,12 +149,13 @@
 		E546FAA42D134E4E006BA8B3 /* MyTodo */ = {
 			isa = PBXGroup;
 			children = (
+				E5218E152D161D4900303A73 /* Info.plist */,
+				E5218DFC2D161A2400303A73 /* Assets */,
 				E546FADB2D136470006BA8B3 /* Appearance */,
 				E546FAD62D135F70006BA8B3 /* Commons */,
 				E546FAD12D135379006BA8B3 /* TextView */,
 				E546FAA52D134E4E006BA8B3 /* MyTodoApp.swift */,
 				E546FAA72D134E4E006BA8B3 /* ContentView.swift */,
-				E546FAA92D134E4F006BA8B3 /* Assets.xcassets */,
 				E546FAAB2D134E4F006BA8B3 /* Preview Content */,
 			);
 			path = MyTodo;
@@ -273,8 +317,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5218E0C2D161A6E00303A73 /* Lato-bold.ttf in Resources */,
 				E546FAAD2D134E4F006BA8B3 /* Preview Assets.xcassets in Resources */,
+				E5218E122D161A6E00303A73 /* Lato-thin.ttf in Resources */,
+				E5218E0A2D161A6E00303A73 /* Lato-black.ttf in Resources */,
+				E5218E142D161A6E00303A73 /* OFL.txt in Resources */,
 				E546FAAA2D134E4F006BA8B3 /* Assets.xcassets in Resources */,
+				E5218E112D161A6E00303A73 /* Lato-regular.ttf in Resources */,
+				E5218E0F2D161A6E00303A73 /* Lato-light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +522,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyTodo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTodo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -500,6 +551,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MyTodo/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyTodo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

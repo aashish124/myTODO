@@ -11,6 +11,10 @@ struct MyFont: Codable {
     let name: String
     let size: CGFloat
     let weight: FontWeight
+    
+    var appFont: Font {
+        return Font.custom("\(name)-\(weight.rawValue)", size: size)
+    }
 }
 
 enum FontWeight: String, Codable, DefaultCaseEnum {
@@ -30,7 +34,7 @@ enum FontWeight: String, Codable, DefaultCaseEnum {
     var swiftUIFontWeight: Font.Weight {
         switch self {
         case .ultraLight:
-            return .ultraLight
+            return .light
         case .thin:
             return .thin
         case .light:
@@ -38,13 +42,13 @@ enum FontWeight: String, Codable, DefaultCaseEnum {
         case .regular:
             return .regular
         case .medium:
-            return .medium
+            return .regular
         case .semibold:
-            return .semibold
+            return .bold
         case .bold:
             return .bold
         case .heavy:
-            return .heavy
+            return .bold
         case .black:
             return .black
         case .unknown:

@@ -13,7 +13,9 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Hello, world!")
+//            Text("Hello, world!")
+            let textModel = TextModel(text: "What do you want to do today?", font: MyFont(name: "Lato", size: 20, weight: .thin), textAlignment: .leading, textColor: MyColor(color: .black))
+            TextView(textModel: textModel)
         }
         .padding()
     }
